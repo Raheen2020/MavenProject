@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3174856200,
+              "duration": 1883824000,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-05T02:41:21.433Z",
+        "start_timestamp": "2021-03-06T13:30:56.160Z",
         "line": 9,
         "name": "Creating an Employee",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 24933300,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 10,
@@ -46,8 +46,9 @@
           },
           {
             "result": {
-              "duration": 498063500,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"io.restassured.specification.RequestSpecification.when()\" because \"this.request\" is null\r\n\tat com.hrms.api.apiTestingFinalSteps.a_POST_call_is_made_to_create_an_Employee(apiTestingFinalSteps.java:51)\r\n\tat ✽.a POST call is made to create an Employee(file:///C:/Users/rahee/IdeaProjects/CucumberFrameWorkBatch8/src/test/resources/features/apiWorkflow.feature:11)\r\n",
+              "duration": 2000800,
+              "status": "failed"
             },
             "line": 11,
             "name": "a POST call is made to create an Employee",
@@ -58,8 +59,7 @@
           },
           {
             "result": {
-              "duration": 37898300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "the status code for creating an employee is 201",
@@ -76,8 +76,7 @@
           },
           {
             "result": {
-              "duration": 97739300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "the employee is created contains key \"Message\" and value \"Entry Created\"",
@@ -98,8 +97,7 @@
           },
           {
             "result": {
-              "duration": 88757900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "the employeeID \"Employee[0].employee_id\" is stored in the global variable to be used for other calls",
@@ -130,7 +128,7 @@
         "steps": [
           {
             "result": {
-              "duration": 490454800,
+              "duration": 83179400,
               "status": "passed"
             },
             "line": 7,
@@ -143,7 +141,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-05T02:41:25.467Z",
+        "start_timestamp": "2021-03-06T13:30:58.148Z",
         "line": 17,
         "name": "Retrieving the created employee",
         "description": "",
@@ -153,7 +151,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7980800,
+              "duration": 16988300,
               "status": "passed"
             },
             "line": 18,
@@ -165,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 528896800,
+              "duration": 94365600,
               "status": "passed"
             },
             "line": 19,
@@ -177,8 +175,9 @@
           },
           {
             "result": {
-              "duration": 1001800,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c400\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.the_status_code_for_retrieving_the_created_employee_is(apiTestingFinalSteps.java:92)\r\n\tat ✽.the status code for retrieving the created employee is 200(file:///C:/Users/rahee/IdeaProjects/CucumberFrameWorkBatch8/src/test/resources/features/apiWorkflow.feature:20)\r\n",
+              "duration": 47851500,
+              "status": "failed"
             },
             "line": 20,
             "name": "the status code for retrieving the created employee is 200",
@@ -195,8 +194,7 @@
           },
           {
             "result": {
-              "duration": 15462300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "the retrieved EmployeeID \"employee[0].employee_id\" matches the globally stored EmployeeID",
@@ -213,8 +211,8 @@
           },
           {
             "result": {
-              "duration": 19945900,
-              "status": "passed"
+              "duration": 1000700,
+              "status": "skipped"
             },
             "line": 22,
             "name": "the retrieved data at \"employee\" matches the data used to create the employee with employee ID \"employee[0].employee_id\"",
@@ -273,7 +271,7 @@
         "steps": [
           {
             "result": {
-              "duration": 487790200,
+              "duration": 65640000,
               "status": "passed"
             },
             "line": 7,
@@ -286,7 +284,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-05T02:41:26.563Z",
+        "start_timestamp": "2021-03-06T13:30:58.422Z",
         "line": 28,
         "name": "Update the created Employee",
         "description": "",
@@ -296,7 +294,7 @@
         "steps": [
           {
             "result": {
-              "duration": 77793600,
+              "duration": 15634900,
               "status": "passed"
             },
             "line": 29,
@@ -308,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 483991200,
+              "duration": 62709100,
               "status": "passed"
             },
             "line": 30,
@@ -320,8 +318,8 @@
           },
           {
             "result": {
-              "duration": 1971200,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c400\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.the_status_code_is(apiTestingFinalSteps.java:174)\r\n\tat ✽.the status code is 201(file:///C:/Users/rahee/IdeaProjects/CucumberFrameWorkBatch8/src/test/resources/features/apiWorkflow.feature:31)\r\n",
+              "status": "failed"
             },
             "line": 31,
             "name": "the status code is 201",
@@ -338,8 +336,7 @@
           },
           {
             "result": {
-              "duration": 20943500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 32,
             "name": "the updated employee contains key \"Message\" and value \"Entry updated\"",
@@ -374,7 +371,7 @@
         "steps": [
           {
             "result": {
-              "duration": 459036100,
+              "duration": 63317700,
               "status": "passed"
             },
             "line": 7,
@@ -387,7 +384,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-05T02:41:27.645Z",
+        "start_timestamp": "2021-03-06T13:30:58.583Z",
         "line": 34,
         "name": "Retrieving the updated employee",
         "description": "",
@@ -397,7 +394,6 @@
         "steps": [
           {
             "result": {
-              "duration": 2988800,
               "status": "passed"
             },
             "line": 35,
@@ -409,7 +405,7 @@
           },
           {
             "result": {
-              "duration": 463027200,
+              "duration": 47592100,
               "status": "passed"
             },
             "line": 36,
@@ -421,8 +417,9 @@
           },
           {
             "result": {
-              "duration": 997600,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c400\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.the_status_code_for_retrieving_the_updated_employee_is(apiTestingFinalSteps.java:204)\r\n\tat ✽.the status code for retrieving the updated employee is 200(file:///C:/Users/rahee/IdeaProjects/CucumberFrameWorkBatch8/src/test/resources/features/apiWorkflow.feature:37)\r\n",
+              "duration": 15611600,
+              "status": "failed"
             },
             "line": 37,
             "name": "the status code for retrieving the updated employee is 200",
@@ -439,8 +436,7 @@
           },
           {
             "result": {
-              "duration": 15957400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 38,
             "name": "the retrieved Employee_Middle_Name \"employee[0].emp_middle_name\" matches the globally sotred employee middle name",
@@ -471,7 +467,7 @@
         "steps": [
           {
             "result": {
-              "duration": 453428900,
+              "duration": 64849800,
               "status": "passed"
             },
             "line": 7,
@@ -484,7 +480,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-05T02:41:28.598Z",
+        "start_timestamp": "2021-03-06T13:30:58.709Z",
         "line": 41,
         "name": "Partially updating the employee",
         "description": "",
@@ -494,7 +490,6 @@
         "steps": [
           {
             "result": {
-              "duration": 971500,
               "status": "passed"
             },
             "line": 42,
@@ -506,7 +501,7 @@
           },
           {
             "result": {
-              "duration": 470829100,
+              "duration": 47562200,
               "status": "passed"
             },
             "line": 43,
@@ -518,7 +513,8 @@
           },
           {
             "result": {
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c400\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.the_status_code_is(apiTestingFinalSteps.java:174)\r\n\tat ✽.the status code is 201(file:///C:/Users/rahee/IdeaProjects/CucumberFrameWorkBatch8/src/test/resources/features/apiWorkflow.feature:44)\r\n",
+              "status": "failed"
             },
             "line": 44,
             "name": "the status code is 201",
@@ -535,8 +531,7 @@
           },
           {
             "result": {
-              "duration": 22939300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 45,
             "name": "the partailly updated employee contains key \"Message\" and value \"Entry updated\"",
@@ -557,8 +552,7 @@
           },
           {
             "result": {
-              "duration": 19945400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 46,
             "name": "the partially update employee \"employee[0].emp_firstname\" matches the globally stored employee first name",
@@ -589,7 +583,7 @@
         "steps": [
           {
             "result": {
-              "duration": 453937300,
+              "duration": 47034300,
               "status": "passed"
             },
             "line": 7,
@@ -602,7 +596,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-05T02:41:29.574Z",
+        "start_timestamp": "2021-03-06T13:30:58.837Z",
         "line": 48,
         "name": "Delete the created employee",
         "description": "",
@@ -612,7 +606,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1992300,
               "status": "passed"
             },
             "line": 49,
@@ -624,7 +617,7 @@
           },
           {
             "result": {
-              "duration": 475529900,
+              "duration": 63338000,
               "status": "passed"
             },
             "line": 50,
@@ -636,8 +629,8 @@
           },
           {
             "result": {
-              "duration": 1026800,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c400\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat com.hrms.api.apiTestingFinalSteps.the_status_code_is(apiTestingFinalSteps.java:174)\r\n\tat ✽.the status code is 201(file:///C:/Users/rahee/IdeaProjects/CucumberFrameWorkBatch8/src/test/resources/features/apiWorkflow.feature:51)\r\n",
+              "status": "failed"
             },
             "line": 51,
             "name": "the status code is 201",
@@ -654,8 +647,7 @@
           },
           {
             "result": {
-              "duration": 13932700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 52,
             "name": "the employee is successfully deleted with the \"message\" in response \"Entry deleted\"",
@@ -676,8 +668,7 @@
           },
           {
             "result": {
-              "duration": 10942800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 53,
             "name": "the \"employee[0].employee_id\" is same as the one stored in global",
@@ -708,7 +699,7 @@
         "steps": [
           {
             "result": {
-              "duration": 464534800,
+              "duration": 67953100,
               "status": "passed"
             },
             "line": 7,
@@ -721,7 +712,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-05T02:41:30.539Z",
+        "start_timestamp": "2021-03-06T13:30:58.979Z",
         "line": 55,
         "name": "Retrieve all Employees",
         "description": "",
@@ -731,7 +722,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1031000,
               "status": "passed"
             },
             "line": 56,
@@ -743,7 +733,7 @@
           },
           {
             "result": {
-              "duration": 729121900,
+              "duration": 125358700,
               "status": "passed"
             },
             "line": 57,
@@ -772,7 +762,7 @@
           },
           {
             "result": {
-              "duration": 2189591100,
+              "duration": 450487700,
               "status": "passed"
             },
             "line": 59,
@@ -808,7 +798,7 @@
         "steps": [
           {
             "result": {
-              "duration": 472773800,
+              "duration": 67246400,
               "status": "passed"
             },
             "line": 7,
@@ -821,7 +811,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-05T02:41:33.931Z",
+        "start_timestamp": "2021-03-06T13:30:59.628Z",
         "line": 61,
         "name": "Retrieve all Employees status",
         "description": "",
@@ -831,7 +821,6 @@
         "steps": [
           {
             "result": {
-              "duration": 2989900,
               "status": "passed"
             },
             "line": 62,
@@ -843,7 +832,7 @@
           },
           {
             "result": {
-              "duration": 474330200,
+              "duration": 63057600,
               "status": "passed"
             },
             "line": 63,
@@ -855,7 +844,6 @@
           },
           {
             "result": {
-              "duration": 997500,
               "status": "passed"
             },
             "line": 64,

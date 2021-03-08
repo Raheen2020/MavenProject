@@ -22,7 +22,10 @@ public class BaseClass {
         switch (ConfigsReader.getPropertyValue("browser").toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                ChromeOoption ChromeOptions=new chromeOptions();
+                ChromeOptions.setHeadless(true);
+                driver = new ChromeDriver(chromeOptions);
+
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
